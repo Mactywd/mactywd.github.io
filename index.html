@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <title>Mattia's Portfolio</title>
+  </head>
+
+  <body style="background-color: #f0f0f0;">
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-sm"
+      style="background-color: rgb(212, 212, 212); width: 100%; position: fixed; top: 0;"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home"> Mattia Girellini </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="#about"> About Me </a>
+            <a class="nav-link" href="#portfolio"> My Portfolio </a>
+          </div>
+        </div>
+        </div>
+    </nav>
+    <!-- About Me -->
+
+    <style>
+      div.container {
+        max-width: 90%;
+        word-wrap: break-word;
+      }
+      li.language {
+        list-style-type: square;
+        margin-left: 1em;
+      }
+      li.project {
+        list-style-type: none;
+        padding: 0;
+      }
+      
+    </style>
+    <div class="ms-4 container">
+
+      <div style="height: 56px;" id="about"></div>
+      <h1 class="text-start mt-4 fw-normal fs-1" id="about">About Me</h1>
+      <p class="text-start ps-4 pt-1 mb-5 fw-light fs-4">
+        Hello! <br />
+        My name is Mattia Girellini and I am a student at
+        <a class="text-secondary" href="https://goo.gl/maps/XiD25yVpax5bMYji8"
+          >Liceo Scientifico Galileo Galilei</a
+        >
+        in Siena, Italy, but my favourite hobby is programming and i have been
+        doing it for a couple of years.
+      </p>
+      <h3 class="text-start ms-4 mt-2 fw-bold fs-4">
+        Known Programming Languages
+      </h3>
+      <ul class="text-start ps-4 pt-1 fw-light fs-5 mb-5">
+        <li class="language">
+          I have learnt
+          <span class="fw-normal">Python</span> and would say I have
+          intermediate knowledge of the language.<br />
+        </li>
+        <li class="language">
+          I am learning how to develop websites with
+          <span class="fw-normal">HTML</span>,
+          <span class="fw-normal">CSS</span>,
+          <span class="fw-normal">JavaScript</span> and all it's frameworks such
+          as
+          <span class="fw-normal">Bootstrap</span>
+          and <span class="fw-normal">React</span>.
+        </li>
+        <li class="language">
+          I am also trying to learn to develop games in
+          <span class="fw-normal">Unity</span>, but I am still a beginner as i
+          have not spent much time on it.
+        </li>
+        <li class="language">
+          I hope to be able to learn all the C family languages such as
+          <span class="fw-normal">C</span>,
+          <span class="fw-normal">C++</span> and
+          <span class="fw-normal">C#</span> in the future.
+        </li>
+      </ul>
+      <div style="height: 56px;" id="portfolio"></div>
+      <h1 class="text-start fw-normal fs-1">
+        My Portfolio
+      </h1>
+      <p class="text-start ps-4 pt-1 mb-5 fw-light fs-4">
+        All of my projects are available on
+        <a class="text-secondary" href="https://github.com/Mactywd/"
+          >my github page</a
+        >. Currently I have only python projects, as I have mainly focused on
+        learning that, but I am working on some React projects.<br />
+        Below are some of my favourite projects:
+      </p>
+
+      <ul class="text-start ps-4 pt-1 fw-light fs-5">
+        <li class="project">
+          <h4>TicTacToe with AI</h4>
+          <p>
+            This is a TicTacToe game i built using Python and Pygame.<br>You can play it with a friend or 4 different types of artificial intelligence: 
+            <ul>
+              <li>Easy</li>
+              <li>Normal</li>
+              <li>Hard</li>
+              <li>Impossible</li>
+            </ul> 
+          </p>
+        </li>
+        <li class="project mt-5">
+          <h4>Wikipedia Generator</h4>
+          <p>
+            This is a Wikipedia generator i built using Python and the wikipedia API.<br>
+            It generates a random wikipedia article and then generates a random wikipedia article from the first one, and so on.
+            You can also select the language.
+          </p>
+        </li>
+        <li class="project mt-5">
+          <h4>Downloadify</h4>
+          <p>
+            This is a python program that lets you download songs from spotify for free.
+            It uses the youtube-search library search the spotify songs on youtube, youtube-dl to download the songs and the spotipy library to get the songs from spotify.
+            
+          </p>
+        </li>
+
+      </ul>
+    </div>
+    <!-- Bootstrap JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
